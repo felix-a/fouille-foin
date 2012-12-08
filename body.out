@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/2.6.2/style/exchange.xsl"?>
+<ops:world-patent-data xmlns:ops="http://ops.epo.org" xmlns="http://www.epo.org/exchange" xmlns:ccd="http://www.epo.org/ccd" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ops:meta name="elapsed-time" value="1944"/>
+    <ops:biblio-search total-result-count="100000">
+        <ops:query syntax="CQL"> gas and chamber</ops:query>
+        <ops:range begin="1" end="25"/>
+        <ops:search-result>
+            <ops:publication-reference system="ops.epo.org" family-id="43731874">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2012227708</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46798853">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012122562</doc-number>
+                    <kind>A2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46794627">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012122271</doc-number>
+                    <kind>A2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46794365">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012122187</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46798447">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012121654</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46062712">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012121651</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45928976">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012121602</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46798342">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012121391</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46798245">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012121289</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46798139">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012121175</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46797751">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012120773</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46797718">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012120737</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46797619">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012120612</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46797553">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012120472</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44115737">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012120211</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45833408">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012120118</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45808962">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012120037</doc-number>
+                    <kind>A2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45808960">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012120034</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44234076">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012119857</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45929486">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012119774</doc-number>
+                    <kind>A2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45974229">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012119770</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44287182">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012119696</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45566955">
+                <document-id document-id-type="docdb">
+    

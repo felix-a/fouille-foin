@@ -1,0 +1,1253 @@
+<documents-list>
+  
+            <ops:publication-reference system="ops.epo.org" family-id="44840489">
+                <document-id document-id-type="docdb">
+                    <country>EP</country>
+                    <doc-number>2393071</doc-number>
+                    <kind>A2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="37928078">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2007065933</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="6840816">
+                <document-id document-id-type="docdb">
+                    <country>DE</country>
+                    <doc-number>4021262</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="4850146">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>2061712</doc-number>
+                    <kind>U</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="25268792">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4686792</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="9295680">
+                <document-id document-id-type="docdb">
+                    <country>FR</country>
+                    <doc-number>2557336</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46757352">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2012116492</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45872169">
+                <document-id document-id-type="docdb">
+                    <country>DE</country>
+                    <doc-number>102010038106</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45817067">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2012068465</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45805920">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2012061968</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44811244">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>202017574</doc-number>
+                    <kind>U</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44497674">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201953559</doc-number>
+                    <kind>U</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43627122">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2677016</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43336061">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>101920777</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43523306">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201732147</doc-number>
+                    <kind>U</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="42138115">
+                <document-id document-id-type="docdb">
+                    <country>RU</country>
+                    <doc-number>2008138122</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="40773784">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201259546</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="39590967">
+                <document-id document-id-type="docdb">
+                    <country>EP</country>
+                    <doc-number>2093552</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="39630826">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>101220802</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="40017111">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201129269</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="39188801">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2008069696</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38234593">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2438311</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="39195653">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201034763</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38580668">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2009287409</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38580668">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2007115411</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38008560">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2447506</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="39745949">
+                <document-id document-id-type="docdb">
+                    <country>RU</country>
+                    <doc-number>2339841</doc-number>
+                    <kind>C1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38952949">
+                <document-id document-id-type="docdb">
+                    <country>RU</country>
+                    <doc-number>2307950</doc-number>
+                    <kind>C1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38872413">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2007295254</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="37500466">
+                <document-id document-id-type="docdb">
+                    <country>RU</country>
+                    <doc-number>2293041</doc-number>
+                    <kind>C2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="36735744">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2006182338</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="33451632">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2004109337</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="33451632">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2418735</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="33451632">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2537952</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="33451632">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2004240319</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26652285">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>03029647</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="32589289">
+                <document-id document-id-type="docdb">
+                    <country>NZ</country>
+                    <doc-number>514623</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="29209617">
+                <document-id document-id-type="docdb">
+                    <country>RU</country>
+                    <doc-number>2207969</doc-number>
+                    <kind>C2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="8494935">
+                <document-id document-id-type="docdb">
+                    <country>ES</country>
+                    <doc-number>2168219</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="4165979">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2306491</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26813314">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>6308649</doc-number>
+                    <kind>B1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="29245132">
+                <document-id document-id-type="docdb">
+                    <country>RU</country>
+                    <doc-number>2209748</doc-number>
+                    <kind>C2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26705769">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>5896825</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="17059188">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>10081299</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="17773191">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>9112406</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="4156185">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2153427</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="4156130">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2152703</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="15575931">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>8322448</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="33851688">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>2210958</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="33822052">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>2189216</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="25496762">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>5356334</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="11410585">
+                <document-id document-id-type="docdb">
+                    <country>IT</country>
+                    <doc-number>1257257</doc-number>
+                    <kind>B</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="16715046">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>6017745</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="23887615">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>5123368</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="4143786">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2005292</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="23610481">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4969411</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="15395046">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>3010992</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="13823259">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2262494</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="10640227">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2220770</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="17383352">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>1105107</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="22152335">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>5090485</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="25429733">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4730119</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="15252946">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4671201</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26958899">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4562784</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="16899054">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>60124591</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="24062316">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4545729</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="12115265">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>59149891</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="20349784">
+                <document-id document-id-type="docdb">
+                    <country>SE</country>
+                    <doc-number>441295</doc-number>
+                    <kind>B</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="27463036">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2110622</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="6134516">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2102755</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26829705">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4422825</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="16222565">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>58093696</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="14226410">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>850000922</doc-number>
+                    <kind>B1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="14628871">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>58015766</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="14628843">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>58015765</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="14226410">
+                <document-id document-id-type="docdb">
+                    <country>EP</country>
+                    <doc-number>0044724</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="14226410">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4448144</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="23063665">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4463699</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="12654917">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>57158192</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26743089">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4441858</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="14226410">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>57026089</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="24696514">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4076190</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="14259809">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>52023367</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26935677">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>3935828</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="22917789">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>1429487</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="22917789">
+                <document-id document-id-type="docdb">
+                    <country>AU</country>
+                    <doc-number>5414973</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="22917789">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>990826</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="22917789">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>3802372</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="10482381">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>1379384</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="32135677">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>189718482</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44223949">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2012240830</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44223949">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2011162564</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43082782">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201638279</doc-number>
+                    <kind>U</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="42097437">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2640289</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="39392947">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201053283</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38786030">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>200959151</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38502662">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20070078294</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="34404736">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2005071064</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="37369721">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20040087612</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="19055610">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2003036490</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26602897">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2002204315</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="19610240">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20010026388</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="15567702">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2000336994</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="16179300">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2000020853</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="11877608">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>62172849</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46480134">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>102591307</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44679172">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>102333110</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44679172">
+                <document-id document-id-type="docdb">
+                    <country>EP</country>
+                    <doc-number>2403210</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45017997">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>202058027</doc-number>
+                    <kind>U</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44840489">
+                <document-id document-id-type="docdb">
+                    <country>EP</country>
+                    <doc-number>2393071</doc-number>
+                    <kind>A2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46827118">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2733206</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="44679172">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2012005745</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46069732">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>102465652</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43603027">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2012144743</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43603027">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>2011021157</doc-number>
+                    <kind>A2</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43603027">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2773110</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="45416398">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2011252272</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="46759400">
+                <document-id document-id-type="docdb">
+                    <country>TW</country>
+                    <doc-number>201137216</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="41203186">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2473237</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43553955">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201738677</doc-number>
+                    <kind>U</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="43363866">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2010266913</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="42350333">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2010140234</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="42324082">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2010122775</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="42300803">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2010112044</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="42494859">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>101763709</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="42254878">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2010092221</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="40465473">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201206406</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="40415616">
+                <document-id document-id-type="docdb">
+                    <country>CN</country>
+                    <doc-number>201195980</doc-number>
+                    <kind>Y</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="39397205">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>100808234</doc-number>
+                    <kind>B1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="40370258">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20080112537</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="39659558">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2008158707</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38843479">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2007310694</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="38502662">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20070078294</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="36731380">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2006177026</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="36731379">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2006177025</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="35017963">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2005235090</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="34687137">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2005141394</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="34647629">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2005135162</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="34393729">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2005073405</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="37386023">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20050029428</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="34404736">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2005071064</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="34206820">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2005031984</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="37378649">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20040102392</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="37319343">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20040011010</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="29233336">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2003281636</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="19715221">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20030032480</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="19688815">
+                <document-id document-id-type="docdb">
+                    <country>WO</country>
+                    <doc-number>0228106</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="25164581">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>2002158901</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="18801088">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2002133561</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="19688815">
+                <document-id document-id-type="docdb">
+                    <country>KR</country>
+                    <doc-number>20000072604</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="18708651">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2002027040</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="4165770">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2303691</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="17324717">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2001084461</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="16434984">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2000020856</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="24442357">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>5676410</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="22694113">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>5416456</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="25472020">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>5692551</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="6466150">
+                <document-id document-id-type="docdb">
+                    <country>DE</country>
+                    <doc-number>4227865</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="17823005">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>4169672</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="4143783">
+                <document-id document-id-type="docdb">
+                    <country>CA</country>
+                    <doc-number>2005270</doc-number>
+                    <kind>A1</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="16213410">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>3052100</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="23238972">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4971374</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="15884106">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>2018694</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="16900983">
+                <document-id document-id-type="docdb">
+                    <country>JP</country>
+                    <doc-number>63086661</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="10552984">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2151116</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="23707405">
+                <document-id document-id-type="docdb">
+                    <country>US</country>
+                    <doc-number>4514932</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="26276281">
+                <document-id document-id-type="docdb">
+                    <country>GB</country>
+                    <doc-number>2081785</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+            <ops:publication-reference system="ops.epo.org" family-id="19919337">
+                <document-id document-id-type="docdb">
+                    <country>NZ</country>
+                    <doc-number>195046</doc-number>
+                    <kind>A</kind>
+                </document-id>
+            </ops:publication-reference>
+</documents-list>
+<search-string-history>
+</search-string-history>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

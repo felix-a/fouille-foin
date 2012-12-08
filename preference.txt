@@ -1,0 +1,36 @@
+<preference>
+	<maximize>true</maximize>
+	<not-max-widow-size>
+		<pos-x>200</pos-x>
+		<pos-y>0</pos-y>
+		<size-x>1100</size-x>
+		<size-y>500</size-y>
+	</not-max-widow-size>
+	<gui-selections>
+		<tab-1>
+			<tab_name>panel 1</tab_name>
+			<panel-1>queries</panel-1>
+			<panel-1-width>400</panel-1-width>
+			<panel-2>image</panel-2>
+			<panel-2-width>400</panel-2-width>
+			<panel-division-pos>400</panel-division-pos>
+		</tab-1>
+		<tab-2>
+			<tab_name>panel 2</tab_name>
+			<panel-1>queries</panel-1>
+			<panel-1-width>400</panel-1-width>
+			<panel-2>image</panel-2>
+			<panel-2-width>400</panel-2-width>
+			<panel-division-pos>400</panel-division-pos>
+		</tab-2>
+		<tab-3>
+			<tab_name>panel 3</tab_name>
+			<panel-1>queries</panel-1>
+			<panel-1-width>400</panel-1-width>
+			<panel-2>image</panel-2>
+			<panel-2-width>400</panel-2-width>
+			<panel-division-pos>400</panel-division-pos>
+		</tab-3>
+	</gui-selections>
+	<workfile>CA.txt</workfile>
+</preference>
