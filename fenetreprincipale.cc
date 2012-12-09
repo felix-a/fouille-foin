@@ -32,16 +32,18 @@ web_response_string.set_string_from_web("number-of-pages=  28  desc");
 page_pos.zero_page();
 //m_Panneau.set_name("name");
 //m_Panneau2.set_name("name2");
-set_title ("Temps d'invention");
-set_border_width(10);
+set_title ("Fouille Foin");
+//set_border_width(10);
 set_default_size(1100, 500);
 preferencePointer=&preference;
 web_response_string.set_string_from_web("ddddde");
 // 	int type = preference.type_panneau();
 //      std::cout <<  "type= " << type << std::endl;
  // put the box into the main window.
+//add(m_topmenu);
 add(m_Box1);
 m_Notebook.set_border_width(5);
+m_Box1.pack_start(m_topmenu);
 m_Box1.pack_start(m_Notebook);
 
 m_Button_open.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_open_clicked) );

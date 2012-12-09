@@ -8,6 +8,7 @@
 #include "preference.h"
 #include "requeteweb.h"
 #include "searchhistory.h"
+#include "topmenu.h"
 #include <gtkmm.h>
 #include <gtkmm/box.h>
 #include <gtkmm/button.h>
@@ -51,6 +52,7 @@ PagePosition page_pos;
 //	void set_path(std::string);
 
 //	std::string reponse_du_web;
+	TopMenu m_topmenu;
    Panneau m_Panneau, m_Panneau2, m_Panneau3, m_Panneau4;
    Searchhistory m_searchhistory, *m_searchhistory_ptr;
 	WorkFile m_workfile1;
