@@ -45,6 +45,8 @@ add(m_Box1);
 m_Notebook.set_border_width(5);
 m_Box1.pack_start(m_topmenu);
 m_Box1.pack_start(m_Notebook);
+m_topmenu.grab_worklist_combo();
+m_topmenu.grab_documentmap();
 
 m_Button_open.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_open_clicked) );
 m_Button_save.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_save_clicked) );

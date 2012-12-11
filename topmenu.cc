@@ -10,22 +10,29 @@ TopMenu::TopMenu()
   m_refActionGroup = Gtk::ActionGroup::create();
 
   //File|New sub menu:
-  m_refActionGroup->add(Gtk::Action::create("FileNewStandard",
-              Gtk::Stock::NEW, "_New", "Create a new file"),
-          sigc::mem_fun(*this, &TopMenu::on_menu_file_new_generic));
+ // m_refActionGroup->add(Gtk::Action::create("FileNewStandard",
+   //           Gtk::Stock::NEW, "_New", "Create a new file"),
+     //     sigc::mem_fun(*this, &TopMenu::on_menu_file_new_generic));
 
-  m_refActionGroup->add(Gtk::Action::create("FileNewFoo",
+  /*m_refActionGroup->add(Gtk::Action::create("FileNewFoo",
               Gtk::Stock::NEW, "New Foo", "Create a new foo"),
           sigc::mem_fun(*this, &TopMenu::on_menu_file_new_generic));
 
   m_refActionGroup->add(Gtk::Action::create("FileNewGoo",
               Gtk::Stock::NEW, "_New Goo", "Create a new goo"),
-          sigc::mem_fun(*this, &TopMenu::on_menu_file_new_generic));
+          sigc::mem_fun(*this, &TopMenu::on_menu_file_new_generic));*/
 
   //File menu:
   m_refActionGroup->add(Gtk::Action::create("FileMenu", "File"));
   //Sub-menu.
-  m_refActionGroup->add(Gtk::Action::create("FileNew", Gtk::Stock::NEW));
+  m_refActionGroup->add(Gtk::Action::create("OpenWorkfile", 
+				Gtk::Stock::OPEN, "_OpenWorkfile", "Open a workfile"),
+			sigc::mem_fun(*this, &TopMenu::on_menu_file_open_workfile));
+
+  m_refActionGroup->add(Gtk::Action::create("FileNew", 
+				Gtk::Stock::NEW/*, "_New", "Create a new file"*/),
+			sigc::mem_fun(*this, &TopMenu::on_menu_file_new_generic));
+
   m_refActionGroup->add(Gtk::Action::create("FileQuit", Gtk::Stock::QUIT),
           sigc::mem_fun(*this, &TopMenu::on_menu_file_quit));
 
@@ -65,11 +72,12 @@ TopMenu::TopMenu()
         "<ui>"
         "  <menubar name='MenuBar'>"
         "    <menu action='FileMenu'>"
-        "      <menu action='FileNew'>"
-        "        <menuitem action='FileNewStandard'/>"
-        "        <menuitem action='FileNewFoo'/>"
-        "        <menuitem action='FileNewGoo'/>"
-        "      </menu>"
+		"		<menuitem action='OpenWorkfile'/>"
+        "      	<menuitem action='FileNew'/>"
+//        "        <menuitem action='FileNewStandard'/>"
+//        "        <menuitem action='FileNewFoo'/>"
+//        "        <menuitem action='FileNewGoo'/>"
+//        "      </menu>"
         "      <separator/>"
         "      <menuitem action='FileQuit'/>"
         "    </menu>"
@@ -119,13 +127,84 @@ TopMenu::~TopMenu()
 
 void TopMenu::on_menu_file_quit()
 {
- //   hide(); //Closes the main window to stop the Gtk::Main::run().
+    hide(); //Closes the main window to stop the Gtk::Main::run().
 }
 
 void TopMenu::on_menu_file_new_generic()
 {
    std::cout << "A File|New menu item was selected." << std::endl;
 } 
+
+void TopMenu::on_menu_file_open_workfile()
+{
+//	std::cout <<"load a file"<<std::endl;
+  Gtk::FileChooserDialog dialog("Please choose a file",
+          Gtk::FILE_CHOOSER_ACTION_OPEN);
+  //dialog.set_transient_for(*this);
+
+  //Add response buttons the the dialog:
+  dialog.add_button(Gtk::Stock::CANCEL, Gtk::RESPONSE_CANCEL);
+  dialog.add_button(Gtk::Stock::OPEN, Gtk::RESPONSE_OK);
+
+  //Add filters, so that only certain file types can be selected:
+
+  Glib::RefPtr<Gtk::FileFilter> filter_text = Gtk::FileFilter::create();
+  filter_text->set_name("Text files");
+  filter_text->add_mime_type("text/plain");
+  dialog.add_filter(filter_text);
+
+  Glib::RefPtr<Gtk::FileFilter> filter_cpp = Gtk::FileFilter::create();
+  filter_cpp->set_name("C/C++ files");
+  filter_cpp->add_mime_type("text/x-c");
+  filter_cpp->add_mime_type("text/x-c++");
+  filter_cpp->add_mime_type("text/x-c-header");
+  dialog.add_filter(filter_cpp);
+
+  Glib::RefPtr<Gtk::FileFilter> filter_any = Gtk::FileFilter::create();
+  filter_any->set_name("Any files");
+  filter_any->add_pattern("*");
+  dialog.add_filter(filter_any);
+
+  //Show the dialog and wait for a user response:
+  int result = dialog.run();
+
+  //Handle the response:
+  switch(result)
+  {
+    case(Gtk::RESPONSE_OK):
+    {
+      std::cout << "Open clicked." << std::endl;
+
+      //Notice that this is a std::string, not a Glib::ustring.
+      std::string filename = dialog.get_filename();
+
+	size_t filename_length = filename.size();
+	size_t filename_lastslash = filename.rfind("/",filename_length);
+	std::string filename_only = filename.substr(filename_lastslash + 1, filename_length - filename_lastslash);
+        std::cout << "File selected: " <<  filename << std::endl;
+//	m_worklist_entry.set_text(filename_only);
+//	preference.setworkfile(filename);
+//	std::string workfiledata=m_workfile1.load_workfile(filename);
+//	put_workfile_in_object(workfiledata);
+      break;
+    }
+    case(Gtk::RESPONSE_CANCEL):
+    {
+      std::cout << "Cancel clicked." << std::endl;
+	    break;
+    }
+    default:
+    {
+      std::cout << "Unexpected button clicked." << std::endl;
+       
+      break;
+    }
+  }
+
+
+
+
+}
 
 void TopMenu::on_menu_others()
 {
@@ -153,4 +232,10 @@ void TopMenu::on_menu_choices_two()
 
   std::cout << message << std::endl;
 }
+void TopMenu::grab_worklist_combo()
+{
+}
 
+void TopMenu::grab_documentmap()
+{
+}
