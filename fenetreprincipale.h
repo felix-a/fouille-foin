@@ -24,6 +24,7 @@ void   write_buffer_to_file();
 //std::map<size_t, Document*>  document_map;
  //void put_workfile_in_object(std::string);
 
+class TopMenu;
 //WebResponseString web_response_string;
 struct Note_book_structure
 {
@@ -55,8 +56,8 @@ PagePosition page_pos;
 	TopMenu m_topmenu;
    Panneau m_Panneau, m_Panneau2, m_Panneau3, m_Panneau4;
    Searchhistory m_searchhistory, *m_searchhistory_ptr;
-	WorkFile m_workfile1;
-std::map<size_t, Document*>  document_map;
+	WorkFile m_workfile1, *m_workfile1_ptr;
+std::map<size_t, Document*>  document_map, *document_map_ptr;
  void put_workfile_in_object(std::string);
  int get_number_from_string(std::string);
     bool key_pressed(GdkEventKey *event);
@@ -70,7 +71,7 @@ std::map<size_t,Gtk::Paned*> paned_map;
   void worklist_element_changed(int);
 void signal_handler_child_widget(int);
 void worklist_element_changedhumm();
-protected:
+
   //Signal handlers:
 int select_panneau; 
   void on_button_open_clicked();
@@ -80,10 +81,6 @@ int select_panneau;
 
 
 int get_number_from_string_V2(std::string);
-
-
-
-//Tree model columns:
   class Tirroirs : public Gtk::TreeModel::ColumnRecord
   {
   public:
@@ -94,6 +91,8 @@ int get_number_from_string_V2(std::string);
     Gtk::TreeModelColumn<int> m_col_id;
     Gtk::TreeModelColumn<Glib::ustring> m_col_name;
   };
+
+
 
   Tirroirs tirroir_worklist;
 //Preference preference;
@@ -111,6 +110,7 @@ int get_number_from_string_V2(std::string);
 
   MessagesList m_MessagesList;
   MessageText m_MessageText;
+protected:
 
 };
 

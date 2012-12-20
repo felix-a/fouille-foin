@@ -10,8 +10,8 @@ read_pref_file();
 	nombres_tab=2;
 	y=0;
 	a=0;
-
-};
+workfile="/";
+}
 
 int Preference::type_panneau(){
 	a=y       ;
@@ -21,20 +21,27 @@ y++;
       std::cout <<  "type+1= " << y << std::endl;
 	return a;
 
-};
+}
 
 Preference::~Preference()
 {
 }
+//void Preference::setworkfiledummy(std::string astring)
+//{
+//setworkfile(astring);
+//}
 void Preference::setworkfile(std::string workfile)
 {
-workfilepath=workfile;
+std::cout<<workfile<<std::endl; 
+// m_workfilepath=workfile;
+
 }
 
 std::string Preference::getworkfile()
 {
-return workfilepath;
-};
+//return "hello";
+return workfile;
+}
 
 void Preference::read_pref_file()
 {
@@ -120,10 +127,10 @@ if (preference_file.is_open())
 	std::cout << "workfile path: "<<workfilepath_pos<<" "<< workfilepath_slash_pos <<std::endl;
 	if ((workfilepath_pos < workfilepath_slash_pos) && ((workfilepath_pos != std::string::npos) && (workfilepath_slash_pos != std::string::npos)))
 	{
-	workfilepath=preference_file_raw.substr(workfilepath_pos, workfilepath_slash_pos - workfilepath_pos);
+	 workfile=preference_file_raw.substr(workfilepath_pos, workfilepath_slash_pos - workfilepath_pos);
 	}
-	else workfilepath="CA_error.txt";
-	std::cout <<"workfile path: "<<workfilepath<<std::endl;
+	else workfile="CA_error.txt"; 
+	std::cout <<"workfile path: "<<workfile<<std::endl;
 
 	//Tab informations
 	size_t gui_pos =preference_file_raw.find ("<gui-selections>",0)+15;
@@ -208,8 +215,8 @@ else{
 std::cout << "preference file not loading, using defaults"<<std::endl;
 maximize_window=false;
 }
-};
+}
 
 void Preference::write_pref_file()
 {
-};
+}

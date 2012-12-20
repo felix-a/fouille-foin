@@ -18,12 +18,14 @@ std::string tab_name;
 Panel_pref_structure panel_pref_structure;
 };
 
+
 class Preference
 {
 
 public: 
 Preference();
 virtual ~Preference();
+//	void setworkfiledummy(std::string);
 	void setworkfile(std::string);
 	std::string getworkfile();
 	int nombre_tab();
@@ -34,13 +36,14 @@ virtual ~Preference();
 	int height, width, int_pos_y, int_pos_x;
 	std::map<size_t, Tab_structure*>  tab_structure_map;
 	size_t number_of_tab;
-private:
 
+private:
+	std::string workfile;
 	int a;
 	int y;
 	int nombres_tab;
 	int numero_panneau;
 	int index;
-	std::string workfile, workfilepath;
+
 };
 #endif

@@ -13,10 +13,10 @@
 Panneau::Panneau()
 : m_VBox3(Gtk::ORIENTATION_HORIZONTAL),
 m_VBox2(Gtk::ORIENTATION_VERTICAL),
-m_VBox1(Gtk::ORIENTATION_HORIZONTAL), 
+m_VBox1(Gtk::ORIENTATION_HORIZONTAL) 
 //preference(),
 //: m_button_1("button 1"),
-  m_button_2("button 2")
+ // m_button_2("button 2")
 //  m_button_quit("Quit")
 {
   /* Create a new scrolled window, with scrollbars only if needed */
@@ -80,7 +80,7 @@ select_panneau = 1;
 
  
 add(m_Frame);
-  m_Frame.set_size_request(400, 10);
+  m_Frame.set_size_request(575, 650);
 
  // m_Frame.set_label("Gtk::Frame Widget                ");
   m_Frame.set_label_align(Gtk::ALIGN_END, Gtk::ALIGN_CENTER);
@@ -112,10 +112,10 @@ add(m_Frame);
 
 //  m_VBox3.pack_start(m_ScrolledWindow);
 
-	m_button_2.signal_clicked().connect( sigc::mem_fun(*this,
-              &Panneau::on_button_clicked) );
+//	m_button_2.signal_clicked().connect( sigc::mem_fun(*this,
+//              &Panneau::on_button_clicked) );
 
-  m_VBox2.pack_start(m_button_2, Gtk::PACK_SHRINK); // remplacer par "Enter"
+  //m_VBox2.pack_start(m_button_2, Gtk::PACK_SHRINK); // remplacer par "Enter"
 //m_BoîtePaneau.add(m_button_2);
 m_VBox2.pack_start(m_panneauimage);
 m_VBox2.pack_start(m_panneautexte);
@@ -146,11 +146,11 @@ Gtk::TreeModel::Row row = *iter;
 int id = row[m_Columns.m_col_id];
 return id;
 }
-void Panneau::on_button_clicked()
-{
+//void Panneau::on_button_clicked()
+//{
 //std::string allo="humm";
 // size_t bon=requeteweb(allo);
-}
+//}
 
 void Panneau::on_combo_changed()
 {

@@ -19,22 +19,31 @@ FenetrePrincipale::FenetrePrincipale()
 //	preference(),
   m_Button_open("Open"),
   m_Button_save("Save"),
-  m_Button_new("New")
+  m_Button_new("New") 
 {
 maximize();
 unmaximize();
+worklisttreeModel = Gtk::TreeStore::create(tirroir_worklist);
+worklist_combo.set_model(worklisttreeModel);
 preference.read_pref_file();
 text_buffer.initiate_buffer();
 text_buf_ptr=&text_buffer;
+m_workfile1_ptr=&m_workfile1;
 web_html_response_ptr=&web_html_response;
 m_searchhistory_ptr=&m_searchhistory;
+document_map_ptr=&document_map;
+m_workfile1.grab_document_map(document_map_ptr);
+m_topmenu.grab_fenetre_principale(this);
+m_topmenu.grab_document_map_menu(document_map_ptr);
+  std::cout << "document map pointer second time: " << this <<std::endl;
+
 web_response_string.set_string_from_web("number-of-pages=  28  desc");
 page_pos.zero_page();
 //m_Panneau.set_name("name");
 //m_Panneau2.set_name("name2");
 set_title ("Fouille Foin");
 //set_border_width(10);
-set_default_size(1100, 500);
+set_default_size(1200, 500);
 preferencePointer=&preference;
 web_response_string.set_string_from_web("ddddde");
 // 	int type = preference.type_panneau();
@@ -45,15 +54,15 @@ add(m_Box1);
 m_Notebook.set_border_width(5);
 m_Box1.pack_start(m_topmenu);
 m_Box1.pack_start(m_Notebook);
-m_topmenu.grab_worklist_combo();
+m_topmenu.grab_preference(preferencePointer);
+m_topmenu.grab_worklist1(m_workfile1_ptr);
 m_topmenu.grab_documentmap();
 
 m_Button_open.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_open_clicked) );
 m_Button_save.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_save_clicked) );
 m_Button_new.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_new_clicked) );
 
-worklisttreeModel = Gtk::TreeStore::create(tirroir_worklist);
-worklist_combo.set_model(worklisttreeModel);
+
 /*	Gtk::TreeModel::Row worklist_row = *(worklisttreeModel->append());
  worklist_row[tirroir_worklist.m_col_id] = 1;
   worklist_row[tirroir_worklist.m_col_name] = "Requêtes";
@@ -97,6 +106,10 @@ for(int i=1;i<=num_notebook_page;i++){
     std::cout <<  "FPselect_panneau= " <<    note_book_strure_map[i-1]->panneau2.get_name() << std::endl;
 	paned_map[i-1]->pack1(note_book_strure_map[i-1]->panneau1, true, true);	
 	paned_map[i-1]->pack2(note_book_strure_map[i-1]->panneau2, true, true);
+
+//note_book_strure_map[i-1]->panneau1
+//note_book_strure_map[i-1]->panneau2.set_size_request(400,900);
+
 //		note_book_strure_map[i-1]->panneau1.set_pannel_type(0);
 //		note_book_strure_map[i-1]->panneau2.set_pannel_type(0);
 
@@ -416,7 +429,7 @@ std::cout << "size worklist: "<< size_worklist<< std::endl;
 std::cout << "worklist_entry: "<< worklist_entry << std::endl;
        		Gtk::TreeModel::Row worklist_row = *(worklisttreeModel->append());
  		worklist_row[tirroir_worklist.m_col_id] = i+1;
-		worklist_row[tirroir_worklist.m_col_name] = worklist_entry;//document_map[i]->get_country()+document_map[i]->get_number() + document_map[i]->get_kind();
+	 	worklist_row[tirroir_worklist.m_col_name] = worklist_entry;//document_map[i]->get_country()+document_map[i]->get_number() + document_map[i]->get_kind();
 	}
 	worklist_combo.pack_start(tirroir_worklist.m_col_name);
 	worklist_combo.set_active(0);
@@ -542,6 +555,7 @@ size_t ok = requeteweb(image_name_epo,3);
 
        image.density("100");
        image.read("body.pdf");
+		image.zoom("600x600");
        image.write("body.png");
     }
     catch (Magick::WarningCoder &e)

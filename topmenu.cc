@@ -1,4 +1,5 @@
 #include "topmenu.h"
+#include "fenetreprincipale.h"
 #include <gtkmm/stock.h>
 #include <iostream>
 
@@ -173,7 +174,7 @@ void TopMenu::on_menu_file_open_workfile()
   {
     case(Gtk::RESPONSE_OK):
     {
-      std::cout << "Open clicked." << std::endl;
+      std::cout << "Open clicked." << std::endl; 
 
       //Notice that this is a std::string, not a Glib::ustring.
       std::string filename = dialog.get_filename();
@@ -182,15 +183,22 @@ void TopMenu::on_menu_file_open_workfile()
 	size_t filename_lastslash = filename.rfind("/",filename_length);
 	std::string filename_only = filename.substr(filename_lastslash + 1, filename_length - filename_lastslash);
         std::cout << "File selected: " <<  filename << std::endl;
-//	m_worklist_entry.set_text(filename_only);
-//	preference.setworkfile(filename);
+	preference_topmenu_Ptr->setworkfile(filename);
+        std::cout << "File selected: " <<  filename << std::endl;
+
+	std::string workfiledata=m_workfile1_Ptr->load_workfile(filename);
+
+  std::cout << "document map pointer second time: " << pointer_principale <<std::endl;
+
+			m_workfile1_Ptr->put_workfile_in_object_fuck(workfiledata,document_map_ptr_menu,pointer_principale);
+
 //	std::string workfiledata=m_workfile1.load_workfile(filename);
 //	put_workfile_in_object(workfiledata);
       break;
     }
     case(Gtk::RESPONSE_CANCEL):
     {
-      std::cout << "Cancel clicked." << std::endl;
+      std::cout << "Cancel clicked." << std::endl; 
 	    break;
     }
     default:
@@ -214,7 +222,7 @@ void TopMenu::on_menu_others()
 void TopMenu::on_menu_choices_one()
 {
   Glib::ustring message;
-  if(m_refChoiceOne->get_active())
+  if(m_refChoiceOne->get_active()) 
     message = "Choice 1 was selected.";
   else
     message = "Choice 1 was deselected";
@@ -223,7 +231,7 @@ void TopMenu::on_menu_choices_one()
 }
 
 void TopMenu::on_menu_choices_two()
-{
+{   
   Glib::ustring message;
   if(m_refChoiceTwo->get_active())
     message = "Choice 2 was selected.";
@@ -232,8 +240,28 @@ void TopMenu::on_menu_choices_two()
 
   std::cout << message << std::endl;
 }
-void TopMenu::grab_worklist_combo()
+void TopMenu::grab_preference(Preference * preference_topmenu_Ptr)
 {
+std::string dude=preference_topmenu_Ptr->getworkfile();
+std::cout<<"what is the work file now: "<<dude<<std::endl;
+
+}
+void TopMenu::grab_document_map_menu(std::map<size_t, Document*> * document_map_ptr_menu)
+{
+  std::cout << "document map pointer" << document_map_ptr_menu <<std::endl;
+TopMenu::document_map_ptr_menu=document_map_ptr_menu;
+//string_poiter = (int)&document_map_ptr_menu;
+//  std::cout << "document map pointer" << string_poiter <<std::endl;
+}
+void TopMenu::grab_worklist1(WorkFile *m_workfile1_Ptr)
+{
+
+
+}
+void	TopMenu::grab_fenetre_principale(FenetrePrincipale * pointer_principale)
+{
+TopMenu::pointer_principale=pointer_principale;
+  std::cout << "document map pointer second time: " << pointer_principale <<std::endl;
 }
 
 void TopMenu::grab_documentmap()

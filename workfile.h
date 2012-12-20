@@ -7,6 +7,9 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <math.h>
+#include <map>
+class FenetrePrincipale;
 
 class Document
 {
@@ -41,6 +44,13 @@ public:
 
 WorkFile();
 virtual ~WorkFile();
+	FenetrePrincipale * pointer_principale_worklist;
+
+	void grab_document_map(std::map<size_t, Document*> *);
+std::map<size_t, Document*> m_map, * document_map_ptr, * document_map_ptr_2;
+	void put_workfile_in_object_fuck(std::string,std::map<size_t, Document*> *,	FenetrePrincipale *);
+
+std::uint64_t  doc_map_address;
 	void add_document();
 	void remouve_document();
 	std::string load_workfile(std::string);

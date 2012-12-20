@@ -33,7 +33,7 @@ protected:
 //Signal handlers:
  
   void fill_buffers();
-  void on_button_clicked();
+ // void on_button_clicked();
   void on_combo_changed();
  
 
@@ -65,7 +65,7 @@ protected:
   
 //  Glib::RefPtr<Gtk::TextBuffer> m_refTextBuffer1;
 
- Gtk::Button m_button_2;//, m_button_2, m_button_quit;
+// Gtk::Button m_button_2;//, m_button_2, m_button_quit;
  // Glib::RefPtr<Gtk::ListStore> m_refListStore; //The Tree Model.
  // Gtk::TreeView m_TreeView; //The Tree View.
 
