@@ -8,6 +8,7 @@
 #include "fenetreprincipale.h"
 #include "panneautexte.h"
 #include "panneauimage.h"
+#include "panneauclasses.h"
 #include "searchhistory.h"
 
 Panneau::Panneau()
@@ -56,7 +57,7 @@ m_VBox1(Gtk::ORIENTATION_HORIZONTAL)
 
   row = *(m_refTreeModel->append());
   row[m_Columns.m_col_id] = 3;
-  row[m_Columns.m_col_name] = "Texte";
+  row[m_Columns.m_col_name] = "classification";
 select_panneau = 1;
       std::cout <<  "select_panneau= " << select_panneau << std::endl;
 
@@ -80,10 +81,13 @@ select_panneau = 1;
 
  
 add(m_Frame);
-  m_Frame.set_size_request(575, 650);
-
- // m_Frame.set_label("Gtk::Frame Widget                ");
-  m_Frame.set_label_align(Gtk::ALIGN_END, Gtk::ALIGN_CENTER);
+	//cadre_largeur=500;
+	//cadre_hauteur=500;
+  //m_Frame.set_size_request(cadre_largeur, cadre_hauteur);
+m_Frame.set_hexpand(true);
+m_Frame.set_vexpand(true);
+  //m_Frame.set_label("Gtk::Frame Widget                ");
+  //m_Frame.set_label_align(Gtk::ALIGN_END, Gtk::ALIGN_CENTER);
   m_Frame.set_shadow_type(Gtk::SHADOW_ETCHED_OUT);
 //  m_Frame.add(m_Combo);
   m_Frame.add(m_VBox2);
@@ -119,8 +123,9 @@ add(m_Frame);
 //m_BoîtePaneau.add(m_button_2);
 m_VBox2.pack_start(m_panneauimage);
 m_VBox2.pack_start(m_panneautexte);
+m_VBox2.pack_start(m_panneauclassification);
  
-
+//m_panneauclassification.set_hexpand(true);
 
  // show_all_children();
 }
@@ -165,10 +170,17 @@ void Panneau::on_combo_changed()
 if (id == 1){
  m_panneautexte.show();
  m_panneauimage.hide();
+m_panneauclassification.hide();
 }
 if (id == 2) {
 m_panneauimage.show();
 m_panneautexte.hide();
+m_panneauclassification.hide();
+}
+if (id == 3){
+ m_panneautexte.hide();
+ m_panneauimage.hide();
+m_panneauclassification.show();
 }
 
 
@@ -188,9 +200,24 @@ void  Panneau::set_pannel_type(int type)
 std::cout <<"type tel me: " << type<<std::endl;
 //if (type == 0) m_VBox2.pack_start(m_panneautexte);
 //if (type == 1) m_VBox2.pack_start(m_panneauimage);
-if (type == 1) m_panneautexte.hide();
+/*if (type == 1) m_panneautexte.hide();
 if (type == 0) m_panneauimage.hide();
-
+if (type == 2) m_panneauclassification.hide();*/
+if (type == 0){
+ m_panneautexte.show();
+ m_panneauimage.hide();
+m_panneauclassification.hide();
+}
+if (type == 1) {
+m_panneauimage.show();
+m_panneautexte.hide();
+m_panneauclassification.hide();
+}
+if (type == 2){
+ m_panneautexte.hide();
+ m_panneauimage.hide();
+m_panneauclassification.show();
+}
 }
 void Panneau::reload_image()
 {

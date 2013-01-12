@@ -9,7 +9,7 @@
 struct Panel_pref_structure
 {
 std::string left_panel, right_panel;
-size_t left_panel_width, right_panel_width, division_position;
+size_t left_panel_width, right_panel_width, division_position, left_panel_cadre_largeur,left_panel_cadre_hauteur, right_panel_cadre_largeur,right_panel_cadre_hauteur;
 
 };
 struct Tab_structure
@@ -30,13 +30,14 @@ virtual ~Preference();
 	std::string getworkfile();
 	int nombre_tab();
 	int type_panneau();
+
 	void read_pref_file();
 	void write_pref_file();
 	bool maximize_window;
 	int height, width, int_pos_y, int_pos_x;
 	std::map<size_t, Tab_structure*>  tab_structure_map;
 	size_t number_of_tab;
-
+	int nombre_drawer;
 private:
 	std::string workfile;
 	int a;

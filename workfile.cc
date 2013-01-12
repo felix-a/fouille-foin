@@ -135,9 +135,9 @@ std::cout << "worklist_entry: "<< pointer_principale_workfile<< std::endl;
 		worklist_row[pointer_principale_workfile->tirroir_worklist.m_col_name] = worklist_entry;//document_map[i]->get_country()+document_map[i]->get_number() + document_map[i]->get_kind();
 	}
 std::cout << "Bien ici ca va! Numero un"<< std::endl;
-	pointer_principale_workfile->worklist_combo.pack_start(pointer_principale_workfile->tirroir_worklist.m_col_name);
+	//pointer_principale_workfile->worklist_combo.pack_start(pointer_principale_workfile->tirroir_worklist.m_col_id);
 std::cout << "Bien ici ca va!"<< std::endl;
-	pointer_principale_workfile->worklist_combo.set_active(0);
+	pointer_principale_workfile->worklist_combo.set_active(1);
 }
 
 

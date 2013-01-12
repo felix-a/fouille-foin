@@ -185,6 +185,8 @@ void TopMenu::on_menu_file_open_workfile()
         std::cout << "File selected: " <<  filename << std::endl;
 	preference_topmenu_Ptr->setworkfile(filename);
         std::cout << "File selected: " <<  filename << std::endl;
+		std::string window_title="Fouille Foin : fichier de travail : "+ filename_only;
+pointer_principale->set_title (window_title);
 
 	std::string workfiledata=m_workfile1_Ptr->load_workfile(filename);
 

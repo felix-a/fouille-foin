@@ -1,6 +1,8 @@
 #include "fenetreprincipale.h"
 //#include "panneau.h"
 #include "/usr/include/gtk-3.0/gdk/gdkkeysyms.h"
+#include <gtk/gtk.h>
+
 //#include "main.h"
 
 #include <iostream>
@@ -10,22 +12,37 @@ extern WebResponseString  web_response_string;
 extern WebResponseImage   web_response_image_obj;
 
 FenetrePrincipale::FenetrePrincipale()
-:m_Box1(Gtk::ORIENTATION_VERTICAL),
+:m_Box1(Gtk::ORIENTATION_VERTICAL,Gtk::EXPAND),
   m_Box2(Gtk::ORIENTATION_VERTICAL),
   m_Box_worklist_drawer(Gtk::ORIENTATION_HORIZONTAL),
   m_Label1("Contents of tab 1"),
   m_Label2("Contents of tab 2"),
-  m_VPaned(Gtk::ORIENTATION_HORIZONTAL),
+  m_VPaned(Gtk::ORIENTATION_HORIZONTAL)
 //	preference(),
-  m_Button_open("Open"),
-  m_Button_save("Save"),
-  m_Button_new("New") 
+ // m_Button_open("Open"),
+ // m_Button_save("Save"),
+ // m_Button_new("New") 
 {
-maximize();
-unmaximize();
+this->maximize();
+maxi_width=this->get_width();
+maxi_height=this->get_height();
+std::cout << maxi_width<<" L"<<maxi_height<<std::endl;
+this->unmaximize();
+preference.read_pref_file();
 worklisttreeModel = Gtk::TreeStore::create(tirroir_worklist);
 worklist_combo.set_model(worklisttreeModel);
-preference.read_pref_file();
+
+for (int i=1;i<=preference.nombre_drawer;i++)
+{
+tirroir_map[i-1]=new Tirroirs;
+treeStore_map[i-1]=new Glib::RefPtr<Gtk::TreeStore>;
+(*treeStore_map[i-1])= Gtk::TreeStore::create((*tirroir_map[i-1]));
+combobox_drawer_map[i-1]=new Gtk::ComboBox;
+
+(*combobox_drawer_map[i-1]).set_model((*treeStore_map[i-1]));
+//set_model(worklisttreeModel);
+} 
+
 text_buffer.initiate_buffer();
 text_buf_ptr=&text_buffer;
 m_workfile1_ptr=&m_workfile1;
@@ -42,8 +59,10 @@ page_pos.zero_page();
 //m_Panneau.set_name("name");
 //m_Panneau2.set_name("name2");
 set_title ("Fouille Foin");
-//set_border_width(10);
-set_default_size(1200, 500);
+set_border_width(3);
+std::cout<<preference.width<<"  "<<preference.height<<std::endl;
+
+set_default_size(preference.width, preference.height);
 preferencePointer=&preference;
 web_response_string.set_string_from_web("ddddde");
 // 	int type = preference.type_panneau();
@@ -51,16 +70,24 @@ web_response_string.set_string_from_web("ddddde");
  // put the box into the main window.
 //add(m_topmenu);
 add(m_Box1);
-m_Notebook.set_border_width(5);
-m_Box1.pack_start(m_topmenu);
+//m_Box1.set_size_request(800,350);
+//m_Notebook.set_border_width(5);
+m_Box1.set_vexpand(true);
+m_Box1.set_hexpand(true);
+m_Notebook.set_vexpand(true);
+m_Notebook.set_hexpand(true);
+
+m_Box1.pack_start(m_topmenu,Gtk::PACK_SHRINK);
 m_Box1.pack_start(m_Notebook);
 m_topmenu.grab_preference(preferencePointer);
 m_topmenu.grab_worklist1(m_workfile1_ptr);
 m_topmenu.grab_documentmap();
 
-m_Button_open.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_open_clicked) );
-m_Button_save.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_save_clicked) );
-m_Button_new.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_new_clicked) );
+//m_Button_open.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_open_clicked) );
+//m_Button_save.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_save_clicked) );
+//m_Button_new.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::on_button_new_clicked) );
+
+
 
 
 /*	Gtk::TreeModel::Row worklist_row = *(worklisttreeModel->append());
@@ -70,7 +97,12 @@ m_Button_new.signal_clicked().connect( sigc::mem_fun(*this, &FenetrePrincipale::
   worklist_row[tirroir_worklist.m_col_id] = 2;
   worklist_row[tirroir_worklist.m_col_name] = "êtes";
   */    
-worklist_combo.pack_start(tirroir_worklist.m_col_name);
+
+
+
+
+
+//worklist_combo.pack_start(tirroir_worklist.m_col_name);
 
 worklist_combo.signal_changed().connect( sigc::mem_fun(*this, &FenetrePrincipale::worklist_element_changedhumm) );
 //	worklist_combo.set_active(1);
@@ -80,16 +112,33 @@ worklist_combo.signal_changed().connect( sigc::mem_fun(*this, &FenetrePrincipale
   /* Add a vpaned widget to our toplevel window */
 //add(m_Button);
 //  add(m_VPaned);
-m_worklist_entry.set_max_length(15);
-m_worklist_entry.set_text("select worklist");
+//m_worklist_entry.set_max_length(15);
+//m_worklist_entry.set_text("select worklist");
 m_Box1.pack_end(m_Box_worklist_drawer,Gtk::PACK_SHRINK);
-m_Box_worklist_drawer.pack_start(m_worklist_entry, Gtk::PACK_SHRINK);
-m_Box_worklist_drawer.pack_start(m_Button_open, Gtk::PACK_SHRINK);
-m_Box_worklist_drawer.pack_start(m_Button_save, Gtk::PACK_SHRINK);
-m_Box_worklist_drawer.pack_start(m_Button_new, Gtk::PACK_SHRINK);
-m_Box_worklist_drawer.pack_start(worklist_combo);
+//m_Box_worklist_drawer.pack_start(m_worklist_entry, Gtk::PACK_SHRINK);
+//m_Box_worklist_drawer.pack_start(m_Button_open, Gtk::PACK_SHRINK);
+//m_Box_worklist_drawer.pack_start(m_Button_save, Gtk::PACK_SHRINK);
+//m_Box_worklist_drawer.pack_start(m_Button_new, Gtk::PACK_SHRINK);
+m_Box_worklist_drawer.pack_start(worklist_combo,Gtk::PACK_SHRINK);
 
-//worklist_combo.set_active(0);
+for (int i=1;i<=preference.nombre_drawer;i++)
+{
+//tirroir_map[i-1]=new Tirroirs;
+m_Box_worklist_drawer.pack_start((*combobox_drawer_map[i-1]),Gtk::PACK_SHRINK);
+Gtk::TreeModel::Row worklist_row_2 = *((*treeStore_map[i-1])->append());
+		worklist_row_2[(*tirroir_map[i-1]).m_col_id] = 0;
+	 	worklist_row_2[(*tirroir_map[i-1]).m_col_name] = "selection";
+combobox_drawer_map[i-1]->pack_start((*tirroir_map[i-1]).m_col_name);
+}
+        		Gtk::TreeModel::Row worklist_row = *(worklisttreeModel->append());
+ 		worklist_row[tirroir_worklist.m_col_id] = 0;
+	 	worklist_row[tirroir_worklist.m_col_name] = "worklist_entry";
+
+worklist_combo.pack_start(tirroir_worklist.m_col_id);
+worklist_combo.pack_start(tirroir_worklist.m_col_name);
+
+    //Gtk::TreeModelColumn<Glib::ustring> aaaa="worklist_entry";
+//rklist_combo.pack_start(aaaa);
 
 //Add the Notebook pages:
 size_t num_notebook_page=preference.number_of_tab;
@@ -106,10 +155,34 @@ for(int i=1;i<=num_notebook_page;i++){
     std::cout <<  "FPselect_panneau= " <<    note_book_strure_map[i-1]->panneau2.get_name() << std::endl;
 	paned_map[i-1]->pack1(note_book_strure_map[i-1]->panneau1, true, true);	
 	paned_map[i-1]->pack2(note_book_strure_map[i-1]->panneau2, true, true);
+//m_Frame.set_hexpand(true);
+note_book_strure_map[i-1]->panneau1.set_hexpand(true);
+note_book_strure_map[i-1]->panneau2.set_hexpand(true);
+	//panel width
+	double percent_left=(double(preference.tab_structure_map[i-1]->panel_pref_structure.left_panel_cadre_largeur)/(preference.tab_structure_map[i-1]->panel_pref_structure.left_panel_cadre_largeur + preference.tab_structure_map[i-1]->panel_pref_structure.right_panel_cadre_largeur));
+ 	int left_panel_width = floor((get_width() - 10) * percent_left);
+	int right_panel_width=preference.width - 10 -left_panel_width;
+	std::cout << "panel_width : "<<percent_left<<" : "<<left_panel_width<<" : "<<right_panel_width<<std::endl;
+	paned_map[i-1]->set_position(left_panel_width);
+	//panel heith
+	int left_panel_height=preference.height-75;
+	int right_panel_height=preference.height-75;
+	/*	if(preference.tab_structure_map[i-1]->panel_pref_structure.left_panel_cadre_hauteur< preference.tab_structure_map[i-1]->panel_pref_structure.right_panel_cadre_hauteur){
+ 	 left_panel_height= preference.tab_structure_map[i-1]->panel_pref_structure.left_panel_cadre_hauteur;
+ 	 right_panel_height = preference.tab_structure_map[i-1]->panel_pref_structure.left_panel_cadre_hauteur;
+	}
+	else{	
+ 	 left_panel_height= preference.tab_structure_map[i-1]->panel_pref_structure.right_panel_cadre_hauteur;
+ 	 right_panel_height = preference.tab_structure_map[i-1]->panel_pref_structure.right_panel_cadre_hauteur;
+	}*/
+	std::cout << "panel_width : "<<percent_left<<" : "<<left_panel_width<<" : "<<right_panel_width<<std::endl;
 
-//note_book_strure_map[i-1]->panneau1
-//note_book_strure_map[i-1]->panneau2.set_size_request(400,900);
+//	note_book_strure_map[i-1]->panneau1.set_size_request(left_panel_width/*preference.tab_structure_map[i-1]->panel_pref_structure.left_panel_cadre_largeur*/,left_panel_height/*preference.tab_structure_map[i-1]->panel_pref_structure.left_panel_cadre_hauteur*/);
+//	note_book_strure_map[i-1]->panneau2.set_size_request(right_panel_width/*preference.tab_structure_map[i-1]->panel_pref_structure.right_panel_cadre_largeur*/,right_panel_height/*preference.tab_structure_map[i-1]->panel_pref_structure.right_panel_cadre_hauteur*/);
 
+//	note_book_strure_map[i-1]->panneau1.hide();
+//	note_book_strure_map[i-1]->panneau2.hide();
+std::cout <<"alloe: "<<preference.tab_structure_map[i-1]->panel_pref_structure.left_panel_cadre_hauteur<<std::endl;
 //		note_book_strure_map[i-1]->panneau1.set_pannel_type(0);
 //		note_book_strure_map[i-1]->panneau2.set_pannel_type(0);
 
@@ -140,9 +213,14 @@ m_Notebook.signal_switch_page().connect(sigc::mem_fun(*this,&FenetrePrincipale::
 
 
 signal_key_press_event().connect(sigc::mem_fun(*this,&FenetrePrincipale::key_pressed),false);
+//  gtk_widget_add_events(GTK_WIDGET(this), GDK_CONFIGURE); 
 
+signal_configure_event().connect(sigc::mem_fun(*this,&FenetrePrincipale::configure_event),false);
+//this.g_signal_connect(/*G_OBJECT(*/this, "configure-event", G_CALLBACK(&FenetrePrincipale::frame_callback), NULL);
 
 show_all_children();
+
+
 
 for(int i=1;i<=num_notebook_page;i++){
 	note_book_strure_map[i-1]->panneau1.set_pannel_type(0);
@@ -161,6 +239,40 @@ for(int i=1;i<=num_notebook_page;i++){
 FenetrePrincipale::~FenetrePrincipale()
 {
 }
+bool FenetrePrincipale::configure_event(GdkEventConfigure *event)
+{
+	worklist_combo.set_active(0);
+/*std::cout<<"heille ca marche enfin: "<<event<<std::endl;
+std::cout<<"X : "<<event->x<<std::endl;
+std::cout<<"Y : "<<event->y<<std::endl;
+std::cout<<"width : "<<event->width<<std::endl;
+std::cout<<"height : "<<event->height<<std::endl;
+std::cout<<"type : "<<event->type<<std::endl;
+
+if(event->type==true) std::cout<<"send_event : "<<"true"<<std::endl;
+else std::cout<<"send_event : "<<"false" <<std::endl;*/
+//if(this->get_width()<=(maxi_width-20) && this->get_height()<=(maxi_height-20)){
+//this->resize(preference.width, preference.height);
+//std::cout<<"ahlkjsdljflsdjkflsdj"<<std::endl;
+//}
+//resize(preference.width, preference.height);
+//std::cout<<"mbox1 width: "<<m_Box1.get_width()<<"  height"<< m_Box1.get_height()<<std::endl;
+
+m_misealechelle.alechelle_fenetre(event,this);
+/*  Glib::RefPtr<Gdk::Window> win = this->get_window();
+        Gdk::Rectangle r(event->x, event->y, event->width,
+                event->height);
+win->invalidate_rect(r,false);*/
+}
+ void FenetrePrincipale::frame_callback(FenetrePrincipale *window, GdkEvent *event, gpointer data)
+ {
+   int x, y;
+   char buf[10];
+   //x = event->configure.x;
+   //y = event->configure.y;
+   sprintf(buf, "%d, %d", x, y);
+ //  gtk_window_set_title(window, buf);
+ }
 
 bool FenetrePrincipale::key_pressed(GdkEventKey *event)
 {
@@ -273,6 +385,12 @@ else
 		}	
 
 	}
+
+	else if (event->keyval == GDK_KEY_z)
+	{
+	this->resize(1000, 500);
+	std::cout<<"une deux trois"<<std::endl;
+	}
 }
 //bool humm = m_Panneau.is_button_focus();
 
@@ -282,15 +400,15 @@ else
 return true;
 }
 
-void FenetrePrincipale::on_button_open_clicked()
-{
+//void FenetrePrincipale::on_button_open_clicked()
+//{
   //Glib::RefPtr<Gtk::Application> app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
    // ExampleWindow window;
    // Gtk::Main kit(argc, argv);
   //Shows the window and returns when it is closed.
 //  return app->run(window);
  //Gtk::Main::run(m_monnautilus);
-  Gtk::FileChooserDialog dialog("Please choose a file",
+/*  Gtk::FileChooserDialog dialog("Please choose a file",
           Gtk::FILE_CHOOSER_ACTION_OPEN);
   dialog.set_transient_for(*this);
 
@@ -362,7 +480,7 @@ void FenetrePrincipale::on_button_save_clicked()
 void FenetrePrincipale::on_button_new_clicked()
 {
   hide();
-}
+}*/
 void FenetrePrincipale::on_notebook_switch_page(Gtk::Widget* /* page */, guint page_num)
 {
   std::cout << "Switched to tab with index " << page_num << std::endl;
@@ -431,8 +549,8 @@ std::cout << "worklist_entry: "<< worklist_entry << std::endl;
  		worklist_row[tirroir_worklist.m_col_id] = i+1;
 	 	worklist_row[tirroir_worklist.m_col_name] = worklist_entry;//document_map[i]->get_country()+document_map[i]->get_number() + document_map[i]->get_kind();
 	}
-	worklist_combo.pack_start(tirroir_worklist.m_col_name);
-	worklist_combo.set_active(0);
+	worklist_combo.pack_start(tirroir_worklist.m_col_id);
+	worklist_combo.set_active(1);
 }
 void FenetrePrincipale::worklist_element_changedhumm()
 {

@@ -300,14 +300,14 @@ for (i=0;i<size;i++){
 	modifications[i][1]=1;
 	} 
 
-/* else if (requetebrut.substr(i,1) == "=")
+ else if (requetebrut.substr(i,1) == "=")
 	{
 	modifications[i][1]=2;
-	} */
-/* else if (requetebrut.substr(i,1) == "&")
+	} 
+ else if (requetebrut.substr(i,1) == "&")
 	{
 	modifications[i][1]=3;
-	}*/ 
+	} 
  else
 	{
 	modifications[i][1]=0;
@@ -317,28 +317,35 @@ for (i=0;i<size;i++){
 }
 i=0;
 j=0;
+bool replace = true;
 while (i<size)
 {
 	if (modifications[j][1]==1)
 	{
-	requetebrut.erase(i,1);
-	requetebrut.insert(i,"%20");
-	size=size+2;
-	i=i+2;
+
+			requetebrut.erase(i,1);
+			requetebrut.insert(i,"%20");
+			size=size+2;
+			i=i+2;
+		
 	}
 	else if (modifications[j][1]==2)
 	{
-	requetebrut.erase(i,1);
-	requetebrut.insert(i,"%3D");
-	size=size +2;
-	i=i+2;
+		if (replace==true)
+		{
+		requetebrut.erase(i,1);
+		requetebrut.insert(i,"%3D");
+		size=size +2;
+		i=i+2;
+		}
 	} 
 	else if (modifications[j][1]==3)
 	{
-	requetebrut.erase(i,1);
-	requetebrut.insert(i,"%26");
-	size=size +2;
-	i=i+2;
+	replace=false;
+//	requetebrut.erase(i,1);
+//	requetebrut.insert(i,"%26");
+//	size=size +2;
+//	i=i+2;
 	}
 	i++;
 	j++;

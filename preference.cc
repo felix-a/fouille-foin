@@ -99,8 +99,8 @@ if (preference_file.is_open())
 	}
 	else int_pos_y = 15; //default 
 	//  height
-	size_t num_height =preference_file_raw.find ("<size-x>",0)+8;
-	size_t num_slash_height =preference_file_raw.find ("</size-x>",num_height);
+	size_t num_height =preference_file_raw.find ("<size-y>",0)+8;
+	size_t num_slash_height =preference_file_raw.find ("</size-y>",num_height);
 	std::cout << "height: "<<num_height<<" "<< num_slash_height <<std::endl;
 	if ((num_height < num_slash_height) && ((num_height != std::string::npos) && (num_slash_height != std::string::npos)))
 	{
@@ -110,8 +110,8 @@ if (preference_file.is_open())
 	}
 	else height = 500; //default 
 	//  width	
-	size_t num_width =preference_file_raw.find ("<size-y>",0)+8;
-	size_t num_slash_width =preference_file_raw.find ("</size-y>",num_width);
+	size_t num_width =preference_file_raw.find ("<size-x>",0)+8;
+	size_t num_slash_width =preference_file_raw.find ("</size-x>",num_width);
 	std::cout << "width: "<<num_width<<" "<< num_slash_width <<std::endl;
 	if ((num_width < num_slash_width) && ((num_width != std::string::npos) && (num_slash_width != std::string::npos)))
 	{
@@ -120,6 +120,19 @@ if (preference_file.is_open())
 	std::cout << "width: "<<width<<std::endl;
 	}
 	else width = 900; //default 
+
+	// nombre_drawer
+	size_t num_drawer =preference_file_raw.find ("<number-of-drawer>",0)+16;
+	size_t num_slash_drawer =preference_file_raw.find ("</number-of-drawer>",num_drawer);
+	std::cout << "drawer: "<<num_drawer<<" "<< num_slash_drawer <<std::endl;
+	if ((num_drawer < num_slash_drawer) && ((num_drawer != std::string::npos) && (num_slash_drawer != std::string::npos)))
+	{
+	std::string string_drawer=preference_file_raw.substr(num_drawer, num_slash_drawer - num_drawer);
+	nombre_drawer = get_number_from_string_out( string_drawer);
+	std::cout << "width: "<<width<<std::endl;
+	}
+	else nombre_drawer = 4; //default 
+
 
 	//workfile path
 	size_t workfilepath_pos =preference_file_raw.find ("<workfile>",0)+10;
@@ -166,13 +179,33 @@ if (preference_file.is_open())
 		if ((panel_1_pos < panel_1_slash_pos) && ((panel_1_pos != std::string::npos) && (panel_1_slash_pos != std::string::npos)))
 		{
 		 tab_structure_map[tab_number]->panel_pref_structure.left_panel =tab_string.substr(panel_1_pos,panel_1_slash_pos-panel_1_pos);
+		}
+		//cadre_largeur
+		size_t panel_1_cadre_largeur_pos = tab_string.find("<panel-1-cadre-largeur>",0)+23;
+		size_t panel_1_cadre_largeur_slash_pos =tab_string.find("</panel-1-cadre-largeur>",panel_1_cadre_largeur_pos);		
+		if ((panel_1_cadre_largeur_pos < panel_1_cadre_largeur_slash_pos) && ((panel_1_cadre_largeur_pos != std::string::npos) && (panel_1_cadre_largeur_slash_pos != std::string::npos)))
+		{
+		std::string left_panel_cadre_largeur =tab_string.substr(panel_1_cadre_largeur_pos,panel_1_cadre_largeur_slash_pos-panel_1_cadre_largeur_pos);
+		size_t cadre_largeur_num=get_number_from_string_out(left_panel_cadre_largeur);
+		 tab_structure_map[tab_number]->panel_pref_structure.left_panel_cadre_largeur =cadre_largeur_num;
+		std::cout <<"cadre_largeur_num" << cadre_largeur_num<<std::endl;
 		}		
+		//cadre_hauteur
+		size_t panel_1_cadre_hauteur_pos = tab_string.find("<panel-1-cadre-hauteur>",0)+23;
+		size_t panel_1_cadre_hauteur_slash_pos =tab_string.find("</panel-1-cadre-hauteur>",panel_1_cadre_hauteur_pos);		
+		if ((panel_1_cadre_hauteur_pos < panel_1_cadre_hauteur_slash_pos) && ((panel_1_cadre_hauteur_pos != std::string::npos) && (panel_1_cadre_hauteur_slash_pos != std::string::npos)))
+		{
+		std::string left_panel_cadre_hauteur =tab_string.substr(panel_1_cadre_hauteur_pos,panel_1_cadre_hauteur_slash_pos-panel_1_cadre_hauteur_pos);
+		size_t cadre_hauteur_num=get_number_from_string_out(left_panel_cadre_hauteur);
+		 tab_structure_map[tab_number]->panel_pref_structure.left_panel_cadre_hauteur =cadre_hauteur_num;
+		std::cout <<"cadre_hauteur_num" << cadre_hauteur_num<<std::endl;
+		}
 		//width
 		size_t panel_1_width_pos = tab_string.find("<panel-1-width>",0)+15;
 		size_t panel_1_width_slash_pos =tab_string.find("</panel-1-width>",panel_1_width_pos);		
 		if ((panel_1_width_pos < panel_1_width_slash_pos) && ((panel_1_width_pos != std::string::npos) && (panel_1_width_slash_pos != std::string::npos)))
 		{
-		std::string left_panel_width =tab_string.substr(panel_1_pos,panel_1_slash_pos-panel_1_pos);
+		std::string left_panel_width =tab_string.substr(panel_1_width_pos,panel_1_width_slash_pos-panel_1_width_pos);
 		size_t left_width_num=get_number_from_string_out(left_panel_width);
 		 tab_structure_map[tab_number]->panel_pref_structure.left_panel_width =left_width_num;
 		}		
@@ -184,6 +217,26 @@ if (preference_file.is_open())
 		if ((panel_2_pos < panel_2_slash_pos) && ((panel_2_pos != std::string::npos) && (panel_2_slash_pos != std::string::npos)))
 		{
 		 tab_structure_map[tab_number]->panel_pref_structure.right_panel =tab_string.substr(panel_2_pos,panel_2_slash_pos-panel_2_pos);
+		}
+		//cadre_largeur
+		size_t panel_2_cadre_largeur_pos = tab_string.find("<panel-2-cadre-largeur>",0)+23;
+		size_t panel_2_cadre_largeur_slash_pos =tab_string.find("</panel-2-cadre-largeur>",panel_2_cadre_largeur_pos);		
+		if ((panel_2_cadre_largeur_pos < panel_2_cadre_largeur_slash_pos) && ((panel_2_cadre_largeur_pos != std::string::npos) && (panel_2_cadre_largeur_slash_pos != std::string::npos)))
+		{
+		std::string left_panel_cadre_largeur =tab_string.substr(panel_2_cadre_largeur_pos,panel_2_cadre_largeur_slash_pos-panel_2_cadre_largeur_pos);
+		size_t cadre_largeur_num=get_number_from_string_out(left_panel_cadre_largeur);
+		 tab_structure_map[tab_number]->panel_pref_structure.right_panel_cadre_largeur =cadre_largeur_num;
+		std::cout <<"cadre_largeur_num" << cadre_largeur_num<<std::endl;
+		}		
+		//cadre_hauteur
+		size_t panel_2_cadre_hauteur_pos = tab_string.find("<panel-2-cadre-hauteur>",0)+23;
+		size_t panel_2_cadre_hauteur_slash_pos =tab_string.find("</panel-2-cadre-hauteur>",panel_2_cadre_hauteur_pos);		
+		if ((panel_2_cadre_hauteur_pos < panel_2_cadre_hauteur_slash_pos) && ((panel_2_cadre_hauteur_pos != std::string::npos) && (panel_2_cadre_hauteur_slash_pos != std::string::npos)))
+		{
+		std::string left_panel_cadre_hauteur =tab_string.substr(panel_2_cadre_hauteur_pos,panel_2_cadre_hauteur_slash_pos-panel_2_cadre_hauteur_pos);
+		size_t cadre_hauteur_num=get_number_from_string_out(left_panel_cadre_hauteur);
+		 tab_structure_map[tab_number]->panel_pref_structure.right_panel_cadre_hauteur =cadre_hauteur_num;
+		std::cout <<"cadre_hauteur_num" << cadre_hauteur_num<<std::endl;
 		}
 		//width
 		size_t panel_2_width_pos = tab_string.find("<panel-2-width>",0)+15;

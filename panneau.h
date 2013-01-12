@@ -8,6 +8,7 @@
 #include "preference.h"
 #include "panneautexte.h"
 #include "panneauimage.h"
+#include "panneauclasses.h"
 //#include "fenetreprincipale.h"
 //#include "main.h"
 
@@ -26,12 +27,12 @@ int type;
 std::string construct_requete_history(std::string ,   Searchhistory*);
 	PanneauImage m_panneauimage;
 	PanneauTexte m_panneautexte;
+	PanneauClassification m_panneauclassification;
 	bool is_text_entry();
 	int which_text_entry();
 protected:
 
-//Signal handlers:
- 
+	int cadre_largeur, cadre_hauteur; 
   void fill_buffers();
  // void on_button_clicked();
   void on_combo_changed();

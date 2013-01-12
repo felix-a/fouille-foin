@@ -357,7 +357,7 @@ return test;
 void PanneauTexte::use_key(GdkEventKey *event,TextBuffer *text_buffer_panneau_ptr)
 {
 std::string dudes=text_buffer_panneau_ptr->get_buffer();
-std::cout << "caractere et buffer: "<< char(event->keyval) << dudes <<std::endl;
+std::cout << "caractere et buffer: "<< char(event->keyval) << dudes << " : "<<event->keyval<< std::endl;
 
  char hehee;
 hehee=(char)event->keyval;
@@ -402,7 +402,8 @@ if (event->keyval == GDK_KEY_A || event->keyval == GDK_KEY_a ||
     event->keyval == GDK_KEY_less || event->keyval == GDK_KEY_greater ||
     event->keyval == GDK_KEY_equal || event->keyval == GDK_KEY_question ||
     event->keyval == GDK_KEY_quoteright || event->keyval == GDK_KEY_quoteleft ||					
-    event->keyval == GDK_KEY_percent || event->keyval == GDK_KEY_underscore	
+    event->keyval == GDK_KEY_percent || event->keyval == GDK_KEY_underscore ||
+    event->keyval == GDK_KEY_quotedbl || event->keyval == GDK_KEY_apostrophe		
 )
 {
  std::string tappe;
